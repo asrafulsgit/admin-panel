@@ -2,32 +2,45 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Asidebar from './components/Asidebar'
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    {/* <div className="flex min-h-screen"> 
+      <Asidebar />
+      <main className="flex-1 ">
+        
+
+        <section className='bg-[#F5F7FA] p-10'>
+            <Home />
+        </section>
+      </main> 
+      </div> */}
+
+    <div className="flex min-h-screen">
+        {/* Sidebar */}
+         
+        <Asidebar />
+         
+
+        {/* Main Content */}
+        <main className="flex-1">
+          {/* Fixed Navbar */}
+          <header className="fixed top-0 left-[20%] right-0 z-40">
+            <Navbar />
+          </header>
+
+          {/* Page content with padding top to avoid overlap */}
+          <section className="bg-[#F5F7FA] p-10 pt-30 min-h-screen">
+           <Home />
+          </section>
+        </main>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
