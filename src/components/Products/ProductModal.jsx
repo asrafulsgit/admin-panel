@@ -41,9 +41,9 @@ const ProductModal = ({ closeModal }) => {
 
             <p className="text-[26px] font-medium mb-4">$15,00</p>
 
-            <div className="flex items-center space-x-8 mb-6">
+            <div className="flex space-x-8 mb-6">
               <div>
-                <p className="font-medium text-[22px]  mb-2">Size</p>
+                <p className="font-medium text-[22px]  ">Size</p>
                 <div className="flex space-x-2 rounded-[24px] px-5 py-3 bg-[#E7EBEE]">
                   <span className="px-3 text-[#0168B8] py-1 rounded-md cursor-pointer">L</span>
                   <span className="px-3 text-[#0168B8] py-1 rounded-md cursor-pointer">XL</span>
@@ -51,8 +51,8 @@ const ProductModal = ({ closeModal }) => {
                 </div>
               </div>
               <div>
-                <p className="font-medium text-[22px] mb-2">Color</p>
-                <div className="flex space-x-2">
+                <p className="font-medium text-[22px] ">Color</p>
+                <div className="flex space-x-2 mt-2.5">
                   <span className="w-6 h-6 rounded-full bg-black border-2 border-blue-500"></span>
                   <span className="w-6 h-6 rounded-full bg-blue-500"></span>
                   <span className="w-6 h-6 rounded-full bg-red-500"></span>
