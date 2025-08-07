@@ -27,7 +27,7 @@ const Navbar = () => {
 
 
             {/* Settings Icon */}
-            <button className="bg-[#E6EEF6]  p-3 rounded-full">
+            <button className="bg-[#E6EEF6]  cursor-pointer p-3 rounded-full">
                 <svg
     xmlns="http://www.w3.org/2000/svg"
     width="25"
@@ -46,7 +46,7 @@ const Navbar = () => {
            
 
             {/* notification Icon */}
-            <button className="bg-[#E6EEF6]  p-3 rounded-full">
+            <button className="bg-[#E6EEF6] cursor-pointer  p-3 rounded-full">
                  <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -82,7 +82,7 @@ const Navbar = () => {
 
             {/* profile Icon */}
             <div className="flex items-center gap-5">
-                <button className="bg-[#0059A0]  p-3 rounded-full">
+                <button className="bg-[#0059A0] cursor-pointer  p-3 rounded-full">
                  <svg
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 24 24"
@@ -103,8 +103,8 @@ const Navbar = () => {
                 <p className="text-xs font-normal">Super Admin</p>
                 </div>
             </div>
-
-            <button className=" p-3 rounded-full">
+            {/* logout button */}
+            <button className="cursor-pointer p-3 rounded-full">
                <svg
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 24 24"

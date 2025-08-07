@@ -70,11 +70,11 @@ const SuspendedVendor = () => {
     <div class="mt-7">
 
     <div class="mb-2">
-      <h2 class="text-[26px] font-semibold  md:mb-0">Requested Vendor</h2>
+      <h2 class="text-[26px] font-semibold  md:mb-0">Suspended Vendor</h2>
     </div>
 
-    <div class="overflow-x-auto rounded-lg p-2">
-      <table class="min-w-full">
+    <div class="overflow-x-auto rounded-lg ">
+      <table class="min-w-full ">
         <thead class="bg-gray-50">
           <tr>
             <th scope="col" class="px-2 py-3 text-left  font-normal uppercase tracking-wider">Date</th>
@@ -94,8 +94,8 @@ const SuspendedVendor = () => {
       <td class="px-3 py-4 whitespace-nowrap text-sm">{item.name}</td>
       <td class="px-3 py-4 whitespace-nowrap text-sm">{item.location}</td>
       <td class="px-3 py-4 whitespace-nowrap text-sm">{item.number}</td>
-      <td class="px-4 py-4 whitespace-nowrap text-sm font-medium">
-        <div className="flex items-center space-x-4">
+      <td className="px-3 py-4 whitespace-nowrap text-sm font-medium max-w-[200px]">
+  <div className="flex items-center space-x-2 flex-wrap">
                      <button className="cursor-pointer">
                        <svg
     xmlns="http://www.w3.org/2000/svg"

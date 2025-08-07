@@ -74,14 +74,14 @@ const Asidebar = () => {
             fillRule="evenodd"
             clipRule="evenodd"
             d={item.icon}
-            fill={isActive ? '#FF8C00' : '#000000'}  
+            fill={isActive ? '#FF8C00' : '#B1B1B1'}  
           />
         </svg>
         </span>
 
         <p
           className={`font-medium text-[18px] ${
-            isActive ? 'text-[#FF8C00]' : 'text-black'
+            isActive ? 'text-[#FF8C00]' : 'text-[#B1B1B1]'
           }`}
         >
           {item.name}
