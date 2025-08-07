@@ -5,6 +5,7 @@ import './App.css'
 import Asidebar from './components/Asidebar'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
+import { Outlet } from 'react-router'
 
 function App() {
   
@@ -37,7 +38,7 @@ function App() {
 
           {/* Page content with padding top to avoid overlap */}
           <section className="bg-[#F5F7FA] p-10 pt-30 min-h-screen">
-           <Home />
+            <Outlet />
           </section>
         </main>
       </div>
