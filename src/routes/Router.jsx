@@ -3,6 +3,11 @@ import Home from "../pages/Home";
 import App from "../App";
 import Products from "../pages/Products";
 import Vendor from "../pages/Vendor";
+import Drivers from "../pages/Drivers";
+import TrackOrder from "../pages/TrackOrder";
+import AdminUserSection from "../components/adminUser/AdminUserSection";
+import Setting from "../pages/Setting";
+import DriverList from "../pages/DriverList";
 
 
 
@@ -22,6 +27,26 @@ const Router = createBrowserRouter([
             { 
                path : 'vendors',
                Component : Vendor,
+            },
+            { 
+               path : 'drivers',
+               Component : Drivers  ,
+            },
+            { 
+               path : 'track-order',
+               Component : TrackOrder,
+            },
+            { 
+               path : 'admin-user',
+               Component : AdminUserSection,
+            },
+            { 
+               path : 'setting',
+               Component : Setting,
+            },
+            { 
+               path : 'drivers-list',
+               Component : DriverList,
             },
         ]
     }
