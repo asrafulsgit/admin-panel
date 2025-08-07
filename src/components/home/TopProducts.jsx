@@ -7,25 +7,8 @@ const categories = [
 ];
 
 const TopProducts = () => {
-   const [selected, setSelected] = useState([]);
-  const [search, setSearch] = useState("");
-  
-
-  const toggleCategory = (cat) => {
-    setSelectedCategories((prev) =>
-      prev.includes(cat)
-        ? prev.filter((c) => c !== cat)
-        : [...prev, cat]
-    );
-  };
-
-  const filteredCategories = categories.filter((cat) =>
-    cat.toLowerCase().includes(search.toLowerCase())
-  );
   return (
     <>
-      {/* select top categories */}
-
       <div className="mt-10">
         {/* Heading + Search */}
         <div className="flex justify-between items-center mb-6">

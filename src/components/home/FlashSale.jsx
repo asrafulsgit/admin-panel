@@ -5,8 +5,8 @@ import React, { useState } from 'react'
   "Shoes", "Hoodies", "Electronics", "Watches", "car", "Property",
   "Shoes", "Hoodies", "Electronics", "Watches", "car", "Property",
 ];
-const TopCategories = () => {
- 
+const FlashSale = () => {
+
   return (
     <>
       <div className="mt-10">
@@ -57,4 +57,4 @@ const TopCategories = () => {
   )
 }
 
-export default TopCategories
+export default FlashSale;
