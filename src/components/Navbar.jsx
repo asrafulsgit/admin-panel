@@ -1,11 +1,31 @@
+import { useLocation } from "react-router"
 
 const Navbar = () => {
+
+  const {pathname} = useLocation();
+ 
+  
+ const navDynamicTitle = [
+  { navTitle: 'Dashboard Overview', path: '/' },
+  { navTitle: 'Vendor Overview', path: '/vendors' },
+  { navTitle: 'Driver Overview ', path: '/drivers' },
+  { navTitle: 'Driver List ', path: '/drivers-list' },
+  { navTitle: 'Order Overview', path: '/track-order' },
+  { navTitle: 'Admin Management', path: '/admin-user' },
+  { navTitle: 'Settings', path: '/setting' }
+]
+
+
   return (
     <div className="flex justify-between items-center  bg-white
     border-b border-[#B0CCE2] py-5 px-10">
           <div>
-            <h2 className="text-2xl font-semibold text-[#343C6A]">Dashboard Overview</h2>
-            <p className="text-xs font-normal text-[#343C6A]">Wednesday, July 23, 2025</p>
+            <h2 className="text-2xl font-semibold text-[#343C6A]">{
+              
+             navDynamicTitle.find(item => item.path === pathname)?.navTitle || 'Dashboard Overview'
+              
+          }</h2>
+            {pathname === '/' || pathname === '/products' && <p className="text-xs font-normal text-[#343C6A]">Wednesday, July 23, 2025</p>}
           </div>
 
           <div className="flex items-center gap-4">
