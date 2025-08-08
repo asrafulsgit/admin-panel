@@ -67,11 +67,11 @@ const vendorData = [
 const NotDeliveredOrder = () => {
     
   return (
-  <>  
+  <div className='my-5'>  
   <div class="mb-2">
       <h2 class="text-[26px] font-semibold  md:mb-0">Not Delivered Order</h2>
     </div>
-  <div class="overflow-x-auto rounded-lg">
+   <div class="overflow-x-auto rounded-lg">
       <table class="min-w-full">
         <thead class="bg-gray-50">
           <tr>
@@ -114,7 +114,7 @@ const NotDeliveredOrder = () => {
       </table>
     </div>
     
-    </>
+    </div>
   )
 }
 

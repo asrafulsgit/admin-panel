@@ -20,24 +20,25 @@ const DrivingRouteList = () => {
   };
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-md max-w-4xl mx-auto my-10">
+    <div className="my-10">
       {/* Save Driving Route List Section */}
       <div>
-        <h2 className="text-2xl font-bold mb-6 text-gray-800">Save Driving Route List</h2>
+        <h2 className="text-[26px] font-semibold mb-3">Save Driving Route List</h2>
         <div className="space-y-6">
           {routes.map((route, routeIndex) => (
-            <div key={routeIndex}>
-              <h3 className="text-lg font-semibold text-gray-700 mb-2">Route {routeIndex + 1} :</h3>
+            <div key={routeIndex} className='flex gap-2 flex-wrap'>
+              <h3 className="text-lg font-medium mb-2">Route {routeIndex + 1} :</h3>
               <div className="flex flex-wrap gap-2">
                 {route.map((location, locationIndex) => (
                   <div
                     key={locationIndex}
-                    className="flex items-center bg-gray-100 text-gray-700 rounded-full px-4 py-2 text-sm font-medium"
+                    className="flex items-center flex-wrap bg-white
+                      rounded-[100px] px-4 py-2  font-normal"
                   >
-                    <span>{location}</span>
+                    <span className='text-sm'>{location}</span>
                     <button
                       onClick={() => handleRemoveLocation(routeIndex, locationIndex)}
-                      className="ml-2 text-gray-400 hover:text-gray-600 transition-colors duration-200"
+                      className="ml-2 cursor-pointer text-2xl h-4 flex items-center"
                     >
                       &times;
                     </button>

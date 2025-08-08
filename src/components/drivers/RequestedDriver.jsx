@@ -72,7 +72,7 @@ const RequestedDriver = () => {
       <h2 class="text-[26px] font-semibold  md:mb-0">Requested Driver</h2>
     </div>
   <div class="overflow-x-auto rounded-lg">
-      <table class="min-w-full">
+      <table class="min-w-5xl w-full">
         <thead class="bg-gray-50">
           <tr>
             <th scope="col" class="px-2 py-3 text-left  font-normal uppercase tracking-wider">Date</th>

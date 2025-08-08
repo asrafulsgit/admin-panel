@@ -13,8 +13,8 @@ const DriverSection = () => {
        <DrivingRouteList />
        <RequestedDriver />
        <NotDeliveredOrder />
-       <AllDriverList />
-       <SuspendedDriver />
+       {/* <AllDriverList /> */}
+       {/* <SuspendedDriver /> */}
     </>
   )
 }
