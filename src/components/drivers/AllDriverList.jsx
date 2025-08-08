@@ -91,7 +91,7 @@ const AllDriverList = () => {
       };
   return (
     <>
-    <div class="mt-7">
+    <div class="my-5">
 
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
       <h2 class="text-[26px] font-semibold  md:mb-0">All vendor list</h2>

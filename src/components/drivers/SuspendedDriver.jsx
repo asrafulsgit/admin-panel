@@ -67,7 +67,7 @@ const vendorData = [
 const SuspendedDriver = () => {
   return (
     <>
-    <div class="mt-7">
+    <div class="my-5">
 
     <div class="mb-2">
       <h2 class="text-[26px] font-semibold  md:mb-0">Suspended Vendor</h2>

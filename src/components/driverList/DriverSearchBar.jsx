@@ -2,13 +2,16 @@ import React from 'react';
 
 const DriverSearchBar = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center p-4 bg-gray-200 rounded-full shadow-lg max-w-3xl mx-auto my-8">
-      <div className="flex flex-grow w-full sm:w-auto space-x-2 bg-white rounded-full p-2">
+    <div className="flex  
+    items-center justify-center p-4 bg-[#37526D]
+    rounded-full  max-w-4xl mx-auto">
+      <div className="flex flex-grow  
+      w-auto space-x-5  rounded-full p-2">
         {/* Pickup Location Input */}
-        <div className="flex items-center w-1/2">
+        <div className="flex bg-[#FFFFFF]  rounded-[10px] items-center w-1/2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-500 ml-3"
+            className="h-7 w-7 text-gray-500 ml-4"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -21,15 +24,16 @@ const DriverSearchBar = () => {
           <input
             type="text"
             placeholder="Pick up location"
-            className="w-full px-3 py-2 text-sm text-gray-700 placeholder-gray-400 bg-white rounded-full focus:outline-none"
+            className="w-full px-3 py-1 font-normal text-[#676767]
+             placeholder-gray-400 bg-white rounded-full focus:outline-none"
           />
         </div>
 
         {/* Destination Input */}
-        <div className="flex items-center w-1/2 border-l border-gray-300 pl-2">
+        <div className="flex bg-[#FFFFFF] p-2 rounded-[10px] items-center w-1/2 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-500"
+            className="h-8 w-8 text-gray-500 ml-3"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -42,13 +46,16 @@ const DriverSearchBar = () => {
           <input
             type="text"
             placeholder="Destination"
-            className="w-full px-3 py-2 text-sm text-gray-700 placeholder-gray-400 bg-white rounded-full focus:outline-none"
+            className="w-full px-3 py-1 font-normal text-[#676767]
+             placeholder-gray-400 bg-white rounded-full focus:outline-none"
           />
         </div>
       </div>
 
       {/* Search Button */}
-      <button className="flex-shrink-0 w-full sm:w-auto px-6 py-2 ml-0 sm:ml-4 mt-4 sm:mt-0 text-white font-medium bg-blue-900 rounded-full hover:bg-blue-800 transition-colors duration-200">
+      <button className="flex-shrink-0   cursor-pointer
+      px-6 py-3.5   font-medium bg-[#FF8C00] text-[#002440]
+       rounded-[100px] transition-colors duration-200">
         Search
       </button>
     </div>
