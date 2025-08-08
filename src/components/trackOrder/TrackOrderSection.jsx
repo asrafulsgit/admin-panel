@@ -67,7 +67,7 @@ const TrackOrderSection = () => {
               <div className="flex items-center space-x-3">
                 <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center overflow-hidden">
                   <img
-                    src="https://via.placeholder.com/150"
+                    src="https://i.ibb.co.com/WNcDtfmZ/Ellipse-36.png"
                     alt="Avatar"
                     className="w-full h-full object-cover"
                   />
@@ -109,7 +109,7 @@ const TrackOrderSection = () => {
               <div className="flex items-center space-x-3 mb-2">
                 <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
                   <img
-                    src="https://via.placeholder.com/150"
+                    src="https://i.ibb.co.com/WNcDtfmZ/Ellipse-36.png"
                     alt="Avatar"
                     className="w-full h-full object-cover"
                   />
@@ -158,7 +158,7 @@ const TrackOrderSection = () => {
               <div className="flex items-center space-x-3 mb-2">
                 <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
                   <img
-                    src="https://via.placeholder.com/150"
+                    src="https://i.ibb.co.com/WNcDtfmZ/Ellipse-36.png"
                     alt="Avatar"
                     className="w-full h-full object-cover"
                   />
@@ -320,8 +320,8 @@ const TrackOrderSection = () => {
               <div className="space-y-4">
                 {/* Product Item */}
                 <div className="flex items-center space-x-4 ">
-                  <img src="https://via.placeholder.com/60x60" alt="MacBook Pro" 
-                  className="w-17 h-17 bg-green-400 object-cover rounded-[10px]" />
+                  <img src="https://i.ibb.co.com/Qv7j2mL4/Rectangle-1.png" alt="MacBook Pro" 
+                  className="w-17 h-17  object-cover rounded-[10px]" />
                   <div className="flex-1 flex flex-col justify-between space-y-3">
                     <p className="font-normal  text-[#344054]">MacBook Pro 14"</p>
                      <div className="-space-y-1.5">
@@ -332,8 +332,8 @@ const TrackOrderSection = () => {
               </div>
                 {/* Product Item */}
                 <div className="flex items-center space-x-4 ">
-                  <img src="https://via.placeholder.com/60x60" alt="MacBook Pro" 
-                  className="w-17 h-17 bg-green-400 object-cover rounded-[10px]" />
+                  <img src="https://i.ibb.co.com/Qv7j2mL4/Rectangle-1.png" alt="MacBook Pro" 
+                  className="w-17 h-17  object-cover rounded-[10px]" />
                   <div className="flex-1 flex flex-col justify-between space-y-3">
                     <p className="font-normal  text-[#344054]">MacBook Pro 14"</p>
                      <div className="-space-y-1.5">
@@ -344,8 +344,8 @@ const TrackOrderSection = () => {
               </div>
                 {/* Product Item */}
                 <div className="flex items-center space-x-4 ">
-                  <img src="https://via.placeholder.com/60x60" alt="MacBook Pro" 
-                  className="w-17 h-17 bg-green-400 object-cover rounded-[10px]" />
+                  <img src="https://i.ibb.co.com/Qv7j2mL4/Rectangle-1.png" alt="MacBook Pro" 
+                  className="w-17 h-17  object-cover rounded-[10px]" />
                   <div className="flex-1 flex flex-col justify-between space-y-3">
                     <p className="font-normal  text-[#344054]">MacBook Pro 14"</p>
                      <div className="-space-y-1.5">
