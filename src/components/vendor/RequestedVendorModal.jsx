@@ -13,9 +13,9 @@ const RequestedVendorModal = ({ closeModal }) => {
           <div className="relative">
             <div className="flex items-center p-10">
           <img
-            src="https://via.placeholder.com/80" 
+            src="https://i.ibb.co.com/4nryq5wt/Ellipse-34.png" 
             alt="Michelle Rivera"
-            className="w-20 h-20 bg-green-400 rounded-full mr-4 object-cover"
+            className="w-[130px] h-[130px]  rounded-full mr-4 object-cover"
           />
           <div className='space-y-1.5'>
             <h2 className="text-[26px] font-medium">TrendLoop</h2>
@@ -53,7 +53,7 @@ const RequestedVendorModal = ({ closeModal }) => {
             {/* Document 1 */}
             <div className="w-64 h-48 bg-gray-100 border border-gray-300 rounded overflow-hidden flex items-center justify-center">
               <img
-                src="https://via.placeholder.com/256x192" // Replace with actual license image 1
+                src="https://i.ibb.co.com/4wRWv9sm/Rectangle-3999.png" // Replace with actual license image 1
                 alt="Business License Certificate"
                 className="object-cover w-full h-full"
               />
@@ -61,7 +61,7 @@ const RequestedVendorModal = ({ closeModal }) => {
             {/* Document 2 */}
             <div className="w-64 h-48 bg-gray-100 border border-gray-300 rounded overflow-hidden flex items-center justify-center">
               <img
-                src="https://via.placeholder.com/256x192" // Replace with actual license image 2
+                src="https://i.ibb.co.com/5gsYgJBc/Rectangle-4000.png" // Replace with actual license image 2
                 alt="State of Connecticut Business License"
                 className="object-cover w-full h-full"
               />

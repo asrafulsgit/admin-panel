@@ -12,9 +12,9 @@ const ProductModal = ({ closeModal }) => {
           {/* Header with Close Button */}
           <div className="relative">
             <img
-              src="http://googleusercontent.com/file_content/0"
+              src="https://i.ibb.co.com/xtzRb667/unsplash-3-Q3ts-J01nc.png"
               alt="Woman in fashion clothes"
-              className="w-full h-80 object-cover rounded-t-lg border"
+              className="w-full h-80 object-cover rounded-t-lg"
             />
             <button
               onClick={closeModal}
