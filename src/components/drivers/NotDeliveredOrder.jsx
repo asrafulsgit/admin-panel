@@ -68,30 +68,30 @@ const NotDeliveredOrder = () => {
     
   return (
   <div className='my-5'>  
-  <div class="mb-2">
-      <h2 class="text-[26px] font-semibold  md:mb-0">Not Delivered Order</h2>
+  <div className="mb-2">
+      <h2 className="text-[26px] font-semibold  md:mb-0">Not Delivered Order</h2>
     </div>
-   <div class="overflow-x-auto rounded-lg">
-      <table class="min-w-full">
-        <thead class="bg-gray-50">
+   <div className="overflow-x-auto rounded-lg">
+      <table className="min-w-full">
+        <thead className="bg-gray-50">
           <tr>
-            <th scope="col" class="px-2 py-3 text-left  font-normal uppercase tracking-wider">Date</th>
-            <th scope="col" class="px-2 py-3 text-left  font-normal uppercase tracking-wider">Name</th>
-            <th scope="col" class="px-2 py-3 text-left  font-normal uppercase tracking-wider">Location</th>
-            <th scope="col" class="px-2 py-3 text-left  font-normal uppercase tracking-wider">Number</th>
-            <th scope="col" class="px-2 py-3 text-left  font-normal uppercase tracking-wider">Action</th>
+            <th scope="col" className="px-2 py-3 text-left  font-normal uppercase tracking-wider">Date</th>
+            <th scope="col" className="px-2 py-3 text-left  font-normal uppercase tracking-wider">Name</th>
+            <th scope="col" className="px-2 py-3 text-left  font-normal uppercase tracking-wider">Location</th>
+            <th scope="col" className="px-2 py-3 text-left  font-normal uppercase tracking-wider">Number</th>
+            <th scope="col" className="px-2 py-3 text-left  font-normal uppercase tracking-wider">Action</th>
           </tr>
         </thead>
         <tbody >
   {vendorData.map((item, index) => (
     <tr
       key={index}
-      class="odd:bg-transparent even:bg-white"
+      className="odd:bg-transparent even:bg-white"
     >
-      <td class="px-3 py-4 whitespace-nowrap text-sm font-medium">{item.date}</td>
-      <td class="px-3 py-4 whitespace-nowrap text-sm">{item.name}</td>
-      <td class="px-3 py-4 whitespace-nowrap text-sm">{item.location}</td>
-      <td class="px-3 py-4 whitespace-nowrap text-sm">{item.number}</td>
+      <td className="px-3 py-4 whitespace-nowrap text-sm font-medium">{item.date}</td>
+      <td className="px-3 py-4 whitespace-nowrap text-sm">{item.name}</td>
+      <td className="px-3 py-4 whitespace-nowrap text-sm">{item.location}</td>
+      <td className="px-3 py-4 whitespace-nowrap text-sm">{item.number}</td>
       <td className="px-3 py-4 whitespace-nowrap text-sm font-medium max-w-[200px]">
   <div className="flex items-center space-x-2 flex-wrap">
                     <span className="text-red-500">

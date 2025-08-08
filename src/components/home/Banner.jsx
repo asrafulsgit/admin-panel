@@ -55,6 +55,7 @@ const Banner = () => {
             .fill(0)
             .map((_, i) => (
               <label
+              key={i}
   htmlFor="miniBannerUpload"
   className=" w-[170px] h-[95px] 
     rounded-[8px] relative overflow-hidden block cursor-pointer"

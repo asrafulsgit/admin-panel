@@ -36,7 +36,7 @@ const ProfileEditForm = () => {
           </label>
           <input
             type="text"
-            value={userInfo.name}
+            value={userInfo.name || ''}
             name="name"
             className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
           />
@@ -51,7 +51,7 @@ const ProfileEditForm = () => {
           </label>
           <input
             type="text"
-            value={userInfo.userName}
+            value={userInfo.userName || ''}
             name="username"
             className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
           />
@@ -66,7 +66,7 @@ const ProfileEditForm = () => {
           </label>
           <input
             type="email"
-            value={userInfo.email}
+            value={userInfo.email || ''}
             name="email"
             className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
           />
@@ -81,7 +81,7 @@ const ProfileEditForm = () => {
           </label>
           <input
             type="password"
-            value={userInfo.password}
+            value={userInfo.password || ''}
             name="password"
             className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
           />
@@ -96,7 +96,7 @@ const ProfileEditForm = () => {
           </label>
           <input
             type="text"
-            value={userInfo.dateOfBirth}
+            value={userInfo.dateOfBirth || ''}
             name="dob"
             className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
           />
@@ -111,7 +111,7 @@ const ProfileEditForm = () => {
           </label>
           <input
             type="text"
-            value={userInfo.presentAddress}
+            value={userInfo.presentAddress || ''}
             name="presentAddress"
             className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
           />
@@ -125,7 +125,7 @@ const ProfileEditForm = () => {
           </label>
           <input
             type="text"
-            value={userInfo.permanentAddress}
+            value={userInfo.permanentAddress || ''}
             name="permanentAddress"
             className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
           />
@@ -141,7 +141,7 @@ const ProfileEditForm = () => {
           </label>
           <input
             type="text"
-            value={userInfo.city}
+            value={userInfo.city || ''}
             name="city"
             className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
           />
@@ -156,7 +156,7 @@ const ProfileEditForm = () => {
           </label>
           <input
             type="text"
-            value={userInfo.zip}
+            value={userInfo.zip || ''}
             name="zip"
             className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
           />
@@ -171,7 +171,7 @@ const ProfileEditForm = () => {
           </label>
           <input
             type="text"
-            value={userInfo.country}
+            value={userInfo.country || ''}
             name="country"
             className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
           />
