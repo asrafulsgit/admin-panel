@@ -1,44 +1,206 @@
-import React from 'react'
-import FormField from './FormField'
+import React from "react";
+import FormField from "./FormField";
 
 const ProfileEditForm = () => {
+  const userInfo = {
+    name: "Charlene Reed",
+    userName: "Charlene Reed",
+    email: "charlenereed@gmail.com",
+    password: "",
+    dateOfBirth: "25 January 1990",
+    presentAddress: "San Jose, California, USA",
+    permanentAddress: "San Jose, California, USA",
+    city: "San Jose",
+    zip: 45962,
+    country: "USA",
+  };
+
   return (
     <div className="flex">
       {/* Profile Picture and form fields */}
       <div className="w-1/4">
         {/* Profile Picture */}
-        <div className="relative w-32 h-32 rounded-full overflow-hidden">
-          <img src="path_to_your_image.jpg" alt="Profile" className="w-full h-full object-cover" />
-          <div className="absolute bottom-1 right-1 bg-white rounded-full p-2 cursor-pointer shadow">
-            {/* Pencil icon */}
+        <div className="relative w-32 h-32">
+          <div className="w-32 h-32 rounded-full overflow-hidden">
+            <img
+              src="path_to_your_image.jpg"
+              alt="Profile"
+              className="w-full h-full bg-green-400 object-cover"
+            />
+          </div>
+          <div className="absolute z-10 bottom-1 right-1 bg-[#FF8C00] rounded-full p-2 cursor-pointer shadow">
             ✏️
           </div>
         </div>
       </div>
-      
+
       {/* Form Fields */}
       <div className="w-3/4 grid grid-cols-2 gap-x-12 gap-y-6">
-        <FormField label="Your Name" value="Charlene Reed" />
-        <FormField label="User Name" value="Charlene Reed" />
-        <FormField label="Email" value="charlenereed@gmail.com" />
-        <FormField label="Password" value="********" type="password" />
-        <FormField label="Date of Birth" value="25 January 1990" />
-        <FormField label="Present Address" value="San Jose, California, USA" />
-        <FormField label="Permanent Address" value="San Jose, California, USA" />
-        <FormField label="City" value="San Jose" />
-        <FormField label="Postal Code" value="45962" />
-        <FormField label="Country" value="USA" />
+
+          {/* name input field */}
+          <div>
+          <label
+            htmlFor="name"
+            className="block text-[#232323] font-normal mb-1"
+          >
+            Your Name
+          </label>
+          <input
+            type="text"
+            value={userInfo.name}
+            name="name"
+            className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
+          />
+        </div>
+        {/* username input field */}
+          <div>
+          <label
+            htmlFor="username"
+            className="block text-[#232323] font-normal mb-1"
+          >
+            Your Name
+          </label>
+          <input
+            type="text"
+            value={userInfo.userName}
+            name="username"
+            className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
+          />
+        </div>
+        {/* email input field */}
+          <div>
+          <label
+            htmlFor="email"
+            className="block text-[#232323] font-normal mb-1"
+          >
+            Email
+          </label>
+          <input
+            type="email"
+            value={userInfo.email}
+            name="email"
+            className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
+          />
+        </div>
+        {/* password input field */}
+          <div>
+          <label
+            htmlFor="password"
+            className="block text-[#232323] font-normal mb-1"
+          >
+            Password
+          </label>
+          <input
+            type="password"
+            value={userInfo.password}
+            name="password"
+            className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
+          />
+        </div>
+        {/* Date of Birth input field */}
+          <div>
+          <label
+            htmlFor="dob"
+            className="block text-[#232323] font-normal mb-1"
+          >
+            Date Of Birth
+          </label>
+          <input
+            type="text"
+            value={userInfo.dateOfBirth}
+            name="dob"
+            className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
+          />
+        </div>
+        {/* present address input field */}
+          <div>
+          <label
+            htmlFor="presentAddress"
+            className="block text-[#232323] font-normal mb-1"
+          >
+            Present Address
+          </label>
+          <input
+            type="text"
+            value={userInfo.presentAddress}
+            name="presentAddress"
+            className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
+          />
+        </div>
+          <div>
+          <label
+            htmlFor="permanentAddress"
+            className="block text-[#232323] font-normal mb-1"
+          >
+            Permanent Address
+          </label>
+          <input
+            type="text"
+            value={userInfo.permanentAddress}
+            name="permanentAddress"
+            className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
+          />
+        </div>
+        {/* city input field */}
+
+          <div>
+          <label
+            htmlFor="city"
+            className="block text-[#232323] font-normal mb-1"
+          >
+            City
+          </label>
+          <input
+            type="text"
+            value={userInfo.city}
+            name="city"
+            className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
+          />
+        </div>
+        {/* post code input field */}
+          <div>
+          <label
+            htmlFor="zip"
+            className="block text-[#232323] font-normal mb-1"
+          >
+            Post Code
+          </label>
+          <input
+            type="text"
+            value={userInfo.zip}
+            name="zip"
+            className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
+          />
+        </div>
+        {/* country input field */}
+          <div>
+          <label
+            htmlFor="country"
+            className="block text-[#232323] font-normal mb-1"
+          >
+            Country
+          </label>
+          <input
+            type="text"
+            value={userInfo.country}
+            name="country"
+            className="w-full px-4 py-3    border border-[#DFEAF2] focus:outline-none rounded-[15px] text-[#337AB3] font-normal "
+          />
+        </div>
+        
+
+        
       </div>
-      
+
       {/* Save Button */}
-      <div className="col-span-2 mt-8  justify-end">
+      {/* <div className="col-span-2 mt-8  justify-end">
         <button className="bg-orange-500  text-white 
         font-bold py-3 px-8 rounded-lg">
           Save
         </button>
-      </div>
+      </div> */}
     </div>
-  )
-}
+  );
+};
 
-export default ProfileEditForm
+export default ProfileEditForm;

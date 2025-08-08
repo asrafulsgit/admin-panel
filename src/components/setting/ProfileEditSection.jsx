@@ -5,7 +5,7 @@ import ProfileEditHeader from "./ProfileEditHeader";
 
 const ProfileEditSection = () => {
   return (
-    <div className="bg-white rounded-2xl shadow-xl p-8 max-w-5xl mx-auto my-10">
+    <div className="bg-[#FFFFFF] rounded-[25px]  p-7">
       <ProfileEditHeader />
       <div className="mt-8">
         <ProfileEditForm />

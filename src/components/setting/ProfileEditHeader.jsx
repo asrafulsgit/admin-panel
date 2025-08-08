@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const ProfileEditHeader = () => {
+  const [isEdit,setIsEdit]=useState(true);
   return (
-    <div className="flex border-b border-gray-200">
-      <div className="text-gray-500 font-medium pb-2 cursor-pointer mr-6">
-        About me
-      </div>
-      <div className="text-blue-600 font-medium border-b-2 border-blue-600 pb-2 cursor-pointer">
-        Edit Profile
-      </div>
+    <div className="flex gap-4 border-b border-[#F4F5F7]">
+      <button onClick={()=>setIsEdit(false)} className="text-[#0059A0] font-medium  cursor-pointer flex flex-col">
+        <p className='px-2'> About me</p>
+        <span className={`h-1 w-full ${!isEdit && 'bg-[#0059A0]'} rounded-tl-[10px] rounded-tr-[10px]`}></span>
+      </button>
+      <button onClick={()=>setIsEdit(true)} className="text-[#0059A0] font-medium  cursor-pointer flex flex-col">
+        <p className='px-2'>Edit Profile</p>
+        <span className={`h-1 w-full ${isEdit && 'bg-[#0059A0]'} rounded-tl-[10px] rounded-tr-[10px]`}></span>
+      </button>
     </div>
   )
 }
