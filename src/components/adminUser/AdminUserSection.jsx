@@ -1,10 +1,11 @@
 import React from 'react'
+import AdminUserList from './AdminUserList'
 
 const AdminUserSection = () => {
   return (
-    <div>
-      <h1>admin user section</h1>
-    </div>
+    < >
+      <AdminUserList />
+    </ >
   )
 }
 
