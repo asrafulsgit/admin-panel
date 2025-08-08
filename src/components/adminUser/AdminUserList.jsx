@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router';
 
 const AdminUserList = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -37,7 +38,7 @@ const AdminUserList = () => {
       <div className="px-5  py-3 border-b border-[#8AB3D3]
        flex justify-between items-center">
         <h1 className="text-2xl font-bold text-gray-800">Admin List</h1>
-        <button className="bg-[#FF8C00] cursor-pointer flex gap-1 items-center text-[#051522] font-medium px-5 py-3  rounded-[12px]   focus:outline-none ">
+        <Link to='create-role'> <button className="bg-[#FF8C00] cursor-pointer flex gap-1 items-center text-[#051522] font-medium px-5 py-3  rounded-[12px]   focus:outline-none ">
           Add New <svg
     xmlns="http://www.w3.org/2000/svg"
     width="25px"
@@ -59,7 +60,7 @@ const AdminUserList = () => {
       strokeLinejoin="round"
     />
   </svg>
-        </button>
+        </button></Link>
       </div>
 
       <div className="overflow-x-auto ">

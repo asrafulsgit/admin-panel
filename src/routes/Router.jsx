@@ -8,6 +8,7 @@ import TrackOrder from "../pages/TrackOrder";
 import AdminUserSection from "../components/adminUser/AdminUserSection";
 import Setting from "../pages/Setting";
 import DriverList from "../pages/DriverList";
+import AddNewAdmin from "../pages/AddNewAdmin";
 
 
 
@@ -47,6 +48,10 @@ const Router = createBrowserRouter([
             { 
                path : 'drivers-list',
                Component : DriverList,
+            },
+            { 
+               path : 'create-role',
+               Component : AddNewAdmin,
             },
         ]
     }
